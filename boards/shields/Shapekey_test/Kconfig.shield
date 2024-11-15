@@ -1,3 +1,3 @@
-config SHIELD_<YOUR_SHIELD_NAME>
-    bool "Enable support for <Your Shield Name>"
+config SHIELD_<SHAPEKEY_TEST>
+    bool "Enable support for <shapekey_test>"
     default y

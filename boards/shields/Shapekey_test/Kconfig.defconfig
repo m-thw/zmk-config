@@ -1,4 +1,4 @@
-if SHIELD_<if SHIELD_SHAPEKEY_TEST>
+if SHIELD_<SHAPEKEY_TEST>
 
 config ZMK_KEYBOARD_NAME
     default "< Shapekey_test>"
