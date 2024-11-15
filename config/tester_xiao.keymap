@@ -14,34 +14,33 @@
     }; \
 };
 
-PIN_MACRO(pin0, <&kp N0>)
-PIN_MACRO(pin1, <&kp N1>)
-PIN_MACRO(pin2, <&kp N2>)
-PIN_MACRO(pin3, <&kp N3>)
-PIN_MACRO(pin4, <&kp N4>)
-PIN_MACRO(pin5, <&kp N5>)
-PIN_MACRO(pin6, <&kp N6>)
-PIN_MACRO(pin7, <&kp N7>)
-PIN_MACRO(pin8, <&kp N8>)
-PIN_MACRO(pin9, <&kp N9>)
-PIN_MACRO(pin10, <&kp N1 &kp N0>)
+PIN_MACRO(pin0_macro, KP_N0)
+PIN_MACRO(pin1_macro, KP_N1)
+PIN_MACRO(pin2_macro, KP_N2)
+PIN_MACRO(pin3_macro, KP_N3)
+PIN_MACRO(pin4_macro, KP_N4)
+PIN_MACRO(pin5_macro, KP_N5)
+PIN_MACRO(pin6_macro, KP_N6)
+PIN_MACRO(pin7_macro, KP_N7)
+PIN_MACRO(pin8_macro, KP_N8)
+PIN_MACRO(pin9_macro, KP_N9)
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <&pin0
-                        &pin1
-                        &pin2
-                        &pin3
-                        &pin4
-                        &pin5
-                        &pin6
-                        &pin7
-                        &pin8
-                        &pin9
-                        &pin10>;
+            bindings = <
+                &pin0_macro
+                &pin1_macro
+                &pin2_macro
+                &pin3_macro
+                &pin4_macro
+                &pin5_macro
+                &pin6_macro
+                &pin7_macro
+                &pin8_macro
+                &pin9_macro>;
         };
     };
 };
