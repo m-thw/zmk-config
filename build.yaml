@@ -19,4 +19,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: test
+    shield: Shapekey_test
