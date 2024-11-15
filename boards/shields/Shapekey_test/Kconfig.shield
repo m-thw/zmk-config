@@ -1,3 +1,3 @@
-config SHIELD_<SHAPEKEY_TEST>
+config SHIELD_SHAPEKEY_TEST
     bool "Enable support for <shapekey_test>"
     default y

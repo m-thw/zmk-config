@@ -1,6 +1,6 @@
-if SHIELD_<SHAPEKEY_TEST>
+if SHIELD_SHAPEKEY_TEST
 
 config ZMK_KEYBOARD_NAME
-    default "< Shapekey_test>"
+    default "<shapekey_test>"
 
 endif
