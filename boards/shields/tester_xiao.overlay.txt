@@ -1,0 +1,17 @@
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+};
+
+&kscan0 {
+    label = "KSCAN";
+    row-gpios = < &gpio0 3 GPIO_ACTIVE_LOW >,
+                < &gpio0 4 GPIO_ACTIVE_LOW >,
+                < &gpio0 5 GPIO_ACTIVE_LOW >,
+                < &gpio0 6 GPIO_ACTIVE_LOW >;
+    col-gpios = < &gpio0 7 GPIO_ACTIVE_LOW >,
+                < &gpio0 8 GPIO_ACTIVE_LOW >,
+                < &gpio0 9 GPIO_ACTIVE_LOW >;
+    diode-direction = "col2row";
+};
