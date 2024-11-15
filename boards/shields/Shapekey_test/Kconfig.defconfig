@@ -1,0 +1,6 @@
+if SHIELD_<YOUR_SHIELD_NAME>
+
+config ZMK_KEYBOARD_NAME
+    default "<Your Keyboard Name>"
+
+endif
