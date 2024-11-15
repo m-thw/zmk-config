@@ -3,6 +3,7 @@
         zmk,kscan = &kscan0;
     };
 };
+#include "Shapekey_test.dtsi"
 
 / {
     kscan0: kscan0 {
