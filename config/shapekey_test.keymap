@@ -1,6 +1,8 @@
 / {
     // 必要なインクルードファイル
     #include <behaviors.dtsi>
+    #include <dt-bindings/zmk/bt.h>
+    #include <behaviors.dtsi>
     #include <dt-bindings/zmk/keys.h>
 
     // キーマップノード
