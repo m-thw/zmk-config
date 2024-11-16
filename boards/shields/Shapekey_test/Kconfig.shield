@@ -1,3 +1,2 @@
 config SHIELD_SHAPEKEY_TEST
-    bool "Enable support for <shapekey_test>"
-    default y
+    def_bool $(shields_list_contains,shapekey_test)

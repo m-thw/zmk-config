@@ -1,46 +1,30 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
-#define PIN_MACRO(name, pin) \
-/ { \
-    macros { \
-        name: name { \
-            compatible = "zmk,behavior-macro"; \
-            wait-ms = <5>; \
-            tap-ms = <5>; \
-            #binding-cells = <0>; \
-            bindings = <&kp P &kp I &kp N &kp SPACE &pin &kp ENTER>; \
-        }; \
-    }; \
-};
-
-PIN_MACRO(pin0_macro, KP_N0)
-PIN_MACRO(pin1_macro, KP_N1)
-PIN_MACRO(pin2_macro, KP_N2)
-PIN_MACRO(pin3_macro, KP_N3)
-PIN_MACRO(pin4_macro, KP_N4)
-PIN_MACRO(pin5_macro, KP_N5)
-PIN_MACRO(pin6_macro, KP_N6)
-PIN_MACRO(pin7_macro, KP_N7)
-PIN_MACRO(pin8_macro, KP_N8)
-PIN_MACRO(pin9_macro, KP_N9)
-
 / {
+    // 必要なインクルードファイル
+    #include <behaviors.dtsi>
+    #include <dt-bindings/zmk/keys.h>
+
+    // キーマップノード
     keymap {
         compatible = "zmk,keymap";
 
+        // レイヤー0 (デフォルトレイヤー)
         default_layer {
             bindings = <
-                &pin0_macro
-                &pin1_macro
-                &pin2_macro
-                &pin3_macro
-                &pin4_macro
-                &pin5_macro
-                &pin6_macro
-                &pin7_macro
-                &pin8_macro
-                &pin9_macro>;
+                &kp Q   &kp W   &kp E   // 1行目: Q W E
+                &kp A   &kp S   &kp D   // 2行目: A S D
+                &kp Z   &kp X   &kp C   // 3行目: Z X C
+            >;
+            label = "Base Layer";
+        };
+
+        // レイヤー1 (シフトレイヤー)
+        shift_layer {
+            bindings = <
+                &kp EXCL  &kp AT    &kp HASH  // 1行目: ! @ #
+                &kp DOLLAR  &kp PERC  &kp CARET // 2行目: $ % ^
+                &kp AMPS    &kp STAR  &kp LPAR  // 3行目: & * (
+            >;
+            label = "Shift Layer";
         };
     };
 };
