@@ -24,3 +24,20 @@
             ;
     };
 };
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    physical_layout0: physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Shapekey Test Layout";
+        rows = <3>;
+        columns = <3>;
+        keymap = <
+            0 1 2   // 1行目
+            3 4 5   // 2行目
+            6 7 8   // 3行目
+        >;
+    };
+};
