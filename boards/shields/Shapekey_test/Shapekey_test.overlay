@@ -24,20 +24,3 @@
             ;
     };
 };
-/ {
-    chosen {
-        zmk,physical-layout = &physical_layout0;
-    };
-
-    physical_layout0: physical_layout {
-        compatible = "zmk,physical-layout";
-        label = "3x3 Layout";
-        rows = <3>;
-        columns = <3>;
-        keymap = <
-            0 1 2
-            3 4 5
-            6 7 8
-        >;
-    };
-};
